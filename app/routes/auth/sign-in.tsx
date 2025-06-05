@@ -1,5 +1,7 @@
+import SignIn from "@/components/pages/sign-in";
+
 const SignInPage = () => {
-  return <div>SignInPage</div>;
+  return <SignIn />;
 };
 
 export default SignInPage;
