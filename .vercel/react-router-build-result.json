@@ -1,0 +1,152 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "root": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/root/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth/sign-in": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth/sign-up": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth/forgot-password": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth/reset-password": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "routes/auth/verify-email": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "routes/auth/auth-layout": {
+        "id": "routes/auth/auth-layout",
+        "parentId": "root",
+        "file": "app/routes/auth/auth-layout.tsx",
+        "config": {}
+      },
+      "routes/root/home": {
+        "id": "routes/root/home",
+        "parentId": "routes/auth/auth-layout",
+        "file": "app/routes/root/home.tsx",
+        "index": true,
+        "config": {}
+      },
+      "routes/auth/sign-in": {
+        "id": "routes/auth/sign-in",
+        "parentId": "routes/auth/auth-layout",
+        "file": "app/routes/auth/sign-in.tsx",
+        "path": "sign-in",
+        "config": {}
+      },
+      "routes/auth/sign-up": {
+        "id": "routes/auth/sign-up",
+        "parentId": "routes/auth/auth-layout",
+        "file": "app/routes/auth/sign-up.tsx",
+        "path": "sign-up",
+        "config": {}
+      },
+      "routes/auth/forgot-password": {
+        "id": "routes/auth/forgot-password",
+        "parentId": "routes/auth/auth-layout",
+        "file": "app/routes/auth/forgot-password.tsx",
+        "path": "forgot-password",
+        "config": {}
+      },
+      "routes/auth/reset-password": {
+        "id": "routes/auth/reset-password",
+        "parentId": "routes/auth/auth-layout",
+        "file": "app/routes/auth/reset-password.tsx",
+        "path": "reset-password",
+        "config": {}
+      },
+      "routes/auth/verify-email": {
+        "id": "routes/auth/verify-email",
+        "parentId": "routes/auth/auth-layout",
+        "file": "app/routes/auth/verify-email.tsx",
+        "path": "verify-email",
+        "config": {}
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "C:/Users/rezaf/OneDrive/Documents/Development/mern-taskforge/fe-taskforge/app",
+    "basename": "/",
+    "buildDirectory": "C:/Users/rezaf/OneDrive/Documents/Development/mern-taskforge/fe-taskforge/build",
+    "future": {
+      "unstable_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "routes/auth/auth-layout": {
+        "id": "routes/auth/auth-layout",
+        "parentId": "root",
+        "file": "routes/auth/auth-layout.tsx"
+      },
+      "routes/root/home": {
+        "id": "routes/root/home",
+        "parentId": "routes/auth/auth-layout",
+        "file": "routes/root/home.tsx",
+        "index": true
+      },
+      "routes/auth/sign-in": {
+        "id": "routes/auth/sign-in",
+        "parentId": "routes/auth/auth-layout",
+        "file": "routes/auth/sign-in.tsx",
+        "path": "sign-in"
+      },
+      "routes/auth/sign-up": {
+        "id": "routes/auth/sign-up",
+        "parentId": "routes/auth/auth-layout",
+        "file": "routes/auth/sign-up.tsx",
+        "path": "sign-up"
+      },
+      "routes/auth/forgot-password": {
+        "id": "routes/auth/forgot-password",
+        "parentId": "routes/auth/auth-layout",
+        "file": "routes/auth/forgot-password.tsx",
+        "path": "forgot-password"
+      },
+      "routes/auth/reset-password": {
+        "id": "routes/auth/reset-password",
+        "parentId": "routes/auth/auth-layout",
+        "file": "routes/auth/reset-password.tsx",
+        "path": "reset-password"
+      },
+      "routes/auth/verify-email": {
+        "id": "routes/auth/verify-email",
+        "parentId": "routes/auth/auth-layout",
+        "file": "routes/auth/verify-email.tsx",
+        "path": "verify-email"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}
